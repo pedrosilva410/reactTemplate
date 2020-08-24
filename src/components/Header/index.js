@@ -1,24 +1,28 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "./styles.css";
 
 const Header = () => {
+
+  let location = useLocation();
+  console.log(typeof location.pathname);
+
   return (
     <ul className="nav">
       <li>
-        <Link className="nav_item" to="/">
+        <NavLink exact className="nav_item" activeClassName="nav_item_selected" to="/">
           Home
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link className="nav_item" to="/about">
+        <NavLink className="nav_item" activeClassName="nav_item_selected" to="/about">
           About
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link className="nav_item" to="/contact">
+        <NavLink className="nav_item" activeClassName="nav_item_selected" to="/contact">
           Contact
-        </Link>
+        </NavLink>
       </li>
     </ul>
   );

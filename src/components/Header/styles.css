@@ -7,12 +7,19 @@
   align-items: center;
 }
 
+.nav li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .nav_item {
   color: #fff;
   font-size: 16px;
 }
 
-.nav_item:hover {
+.nav_item:hover, .nav_item_selected {
   text-decoration: underline;
   cursor: pointer;
   font-size: 18px;

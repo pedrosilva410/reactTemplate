@@ -4,8 +4,8 @@ import "./styles.css";
 const Home = () => {
   return (
     <main>
-      <h1>home</h1>
-      <p>this is the random text at middles that you asked for</p>
+      <h1>React Template</h1>
+      <p className="home__p">This is a base template created with react create app</p>
     </main>
   );
 };
