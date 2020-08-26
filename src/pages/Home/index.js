@@ -5,7 +5,9 @@ const Home = () => {
   return (
     <main>
       <h1>React Template</h1>
-      <p className="home__p">This is a base template created with react create app</p>
+      <p className="home__p">
+        This is a base template created with react create app
+      </p>
     </main>
   );
 };
