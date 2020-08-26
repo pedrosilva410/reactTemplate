@@ -17,11 +17,14 @@
 .nav_item {
   color: #fff;
   font-size: 16px;
+  width: 100px;
+  text-align: center;
+  transition: all .5s ease-in-out;
 }
 
 .nav_item:hover, .nav_item_selected {
-  text-decoration: underline;
+  border-bottom: 1px #fff solid;
+  padding: 20px 0;
   cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
 }
